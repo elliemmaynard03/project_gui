@@ -48,13 +48,8 @@ public class ProjectSystemFACADE {
      * @return The logged-in user, or null if login fails.
      */
     public User login(String userName, String password) {
-        ArrayList<User> users = UserList.getInstance().getUsers();
-        for (User user : users) {
-            if (user.getUsername().equals(userName) && user.getPassword().equals(password)) {
-                return setUser(user);
-            }
-        }
-        return null;
+        UserList userList = UserList.getInstance();
+        return userList.login(userName, password);
     }
 
     /**

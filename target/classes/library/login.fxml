@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.LoginController">
+<Pane id="Pane" fx:id="login_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.LoginController">
    <children>
       <Button layoutX="56.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#btnLoginClicked" prefHeight="39.0" prefWidth="187.0" text="Log In" />
       <TextField id="userNameTextBox" layoutX="108.0" layoutY="151.0" />
