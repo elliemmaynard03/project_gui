@@ -25,17 +25,14 @@ public class LoginController implements Initializable{
 
         ProjectSystemFACADE FACADE = new ProjectSystemFACADE();
 
-        if (FACADE.login(username, password) == null) {
+        FACADE.signUp(username, password, "email", "fn", "ln");
+
+        /*if (FACADE.login(username, password) == null) {
             lbl_error.setText("Invalid login credentials.");
             return;
-        }
+        }*/
 
         App.setRoot("home");
-    }
-
-    @FXML
-    private void back(MouseEvent event) throws IOException {
-        App.setRoot("welcome");
     }
 
     @Override

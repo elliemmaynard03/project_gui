@@ -76,4 +76,8 @@ public class UserList {
     public void SaveUsers() {
         DataWriter.saveUsers();
     }
+
+    public static void addUser(User user) {
+        users.add(user);
+    }
 }

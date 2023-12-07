@@ -36,6 +36,7 @@ public class ProjectSystemFACADE {
             return null;
         }
         this.user = new User(firstName, lastName, email, userName, password);
+        UserList.addUser(user);
         return setUser(user);
     }
 
