@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import java.net.*?>
 
 <Pane id="Pane" fx:id="login_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.LoginController">
    <children>
@@ -13,4 +14,7 @@
       <Label fx:id="usernameLabel" layoutX="31.0" layoutY="156.0" text="User Name:" />
       <Label fx:id="passwordLabel" layoutX="34.0" layoutY="219.0" text="Password: " />
    </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
 </Pane>

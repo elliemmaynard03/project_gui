@@ -315,4 +315,12 @@ public class ProjectSystemFACADE {
         comment.editDate(date);
         return comment;
     }
+
+    public void setUpEnvironment() {
+        User user1 = signUp("preed", "password", "preed@email.com", "paul", "reed");
+        Project project1 = new Project("Building Rocket Ship's!");
+        Project project2 = new Project("Scanning Space Rocks");
+        user1.addCurrentProject(project1);
+        user1.addCurrentProject(project2);
+    }
 }

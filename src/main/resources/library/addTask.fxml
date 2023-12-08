@@ -6,9 +6,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import java.net.*?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.AddTaskController">
    <children>
       <Label id="addTaskLabel" layoutX="92.0" layoutY="21.0" text="Add Task">
          <font>
@@ -34,4 +35,7 @@
          </font>
       </Button>
    </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
 </Pane>

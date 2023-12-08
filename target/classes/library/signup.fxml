@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import java.net.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.SignupController">
    <children>
@@ -19,4 +20,7 @@
       <TextField fx:id="firstNameTextBox" layoutX="110.0" layoutY="108.0" prefHeight="26.0" prefWidth="147.0" />
       <TextField fx:id="emailTextBox" layoutX="110.0" layoutY="216.0" prefHeight="26.0" prefWidth="147.0" />
    </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
 </Pane>

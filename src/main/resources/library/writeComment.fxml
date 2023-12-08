@@ -6,6 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import java.net.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -21,4 +22,7 @@
       <Label id="writeLabel" layoutX="22.0" layoutY="147.0" text="Write:" />
       <Button id="commentButton" layoutX="220.0" layoutY="319.0" mnemonicParsing="false" text="Comment" />
    </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
 </Pane>

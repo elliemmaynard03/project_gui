@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
+import model.ProjectSystemFACADE;
 
 public class WelcomeController  implements Initializable {
     @FXML
@@ -22,6 +23,8 @@ public class WelcomeController  implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        ProjectSystemFACADE facade = ProjectSystemFACADE.getInstance();
+        facade.setUpEnvironment();
     }
     
 }

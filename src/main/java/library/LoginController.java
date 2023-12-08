@@ -8,12 +8,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import model.*;
 
 public class LoginController implements Initializable{
-    @FXML
-    private Pane login_pane;
     @FXML
     private TextField userNameTextBox;
     @FXML
@@ -27,8 +24,6 @@ public class LoginController implements Initializable{
         String password = passwordTextBox.getText();
 
         ProjectSystemFACADE FACADE = ProjectSystemFACADE.getInstance();
-
-        FACADE.signUp(username, password, "email", "fn", "ln");
  
         if (FACADE.login(username, password) == null) {
             lbl_error.setText("Invalid login credentials.");
