@@ -22,7 +22,7 @@ public class SignupController  implements Initializable{
     private TextField emailTextBox;
     
     @FXML
-    private void signUpButton(MouseEvent event) throws IOException{
+    private void signUpBtnClicked(MouseEvent event) throws IOException{
         String username = usernameTextBox.getText();
         String password = passwordTextBox.getText();
         String firstname = firstNameTextBox.getText();
@@ -31,10 +31,10 @@ public class SignupController  implements Initializable{
 
         ProjectSystemFACADE FACADE = ProjectSystemFACADE.getInstance();
         User user = FACADE.signUp(username, password, email, firstname, lastname);
-        if (user == null) {
+        /*if (user == null) {
             // error label
             return;
-        }
+        }*/
 
         FACADE.setUser(user);
         App.setRoot("home");
