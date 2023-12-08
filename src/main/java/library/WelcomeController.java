@@ -10,11 +10,13 @@ import javafx.scene.input.MouseEvent;
 public class WelcomeController  implements Initializable {
     @FXML
     private void switchToLogin(MouseEvent event) throws IOException{
+        //SceneManager.getInstance().showLogin();
         App.setRoot("login");
     }
 
     @FXML
     private void switchToSignup(MouseEvent event) throws IOException{
+        //SceneManager.getInstance().showSignup();
         App.setRoot("signup");
     }
 

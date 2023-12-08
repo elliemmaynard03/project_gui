@@ -10,7 +10,7 @@ import javafx.scene.input.MouseEvent;
 public class HomeController implements Initializable{
     @FXML
     private void btnAddProjectClicked(MouseEvent event) throws IOException{
-        App.setRoot("project");
+        
     }
 
     @Override

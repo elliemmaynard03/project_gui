@@ -38,7 +38,7 @@ public class SignupController  implements Initializable{
         }
 
         FACADE.setUser(user);
-        App.setRoot("home");
+        SceneManager.getInstance().showHome();
     }
 
     @Override

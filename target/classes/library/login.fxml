@@ -8,9 +8,9 @@
 <Pane id="Pane" fx:id="login_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.LoginController">
    <children>
       <Button layoutX="56.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#btnLoginClicked" prefHeight="39.0" prefWidth="187.0" text="Log In" />
-      <TextField id="userNameTextBox" layoutX="108.0" layoutY="151.0" />
-      <TextField id="passwordTextBox" layoutX="108.0" layoutY="215.0" />
-      <Label id="usernameLabel" layoutX="31.0" layoutY="156.0" text="User Name:" />
-      <Label id="passwordLabel" layoutX="34.0" layoutY="219.0" text="Password: " />
+      <TextField fx:id="userNameTextBox" layoutX="108.0" layoutY="151.0" />
+      <TextField fx:id="passwordTextBox" layoutX="108.0" layoutY="215.0" />
+      <Label fx:id="usernameLabel" layoutX="31.0" layoutY="156.0" text="User Name:" />
+      <Label fx:id="passwordLabel" layoutX="34.0" layoutY="219.0" text="Password: " />
    </children>
 </Pane>
