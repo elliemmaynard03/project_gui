@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import model.Column;
 import model.ProjectSystemFACADE;
@@ -26,22 +27,22 @@ public class ProjectController implements Initializable{
     private TextArea projectTitle;
     
     @FXML
-    private TextArea task1title;
+    private TextField task1title;
         
     @FXML
-    private TextArea task2title;
+    private TextField task2title;
         
     @FXML
-    private TextArea task3title;
+    private TextField task3title;
         
     @FXML
-    private TextArea task4title;
+    private TextField task4title;
         
     @FXML
-    private TextArea task5title;
+    private TextField task5title;
         
     @FXML
-    private TextArea task6title;
+    private TextField task6title;
 
     @FXML
     private void btnHomeClicked(MouseEvent event) throws IOException{

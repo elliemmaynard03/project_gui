@@ -34,5 +34,6 @@ public class HomeController implements Initializable{
         ArrayList<Project> projects = user.getCurrentProjects();
         projectArea1.appendText(projects.get(0).getTitle());
         projectArea2.appendText(projects.get(1).getTitle());
+        facade.setProject(projects.get(0));
     }
 }

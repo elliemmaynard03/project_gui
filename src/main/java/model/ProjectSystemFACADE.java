@@ -322,23 +322,25 @@ public class ProjectSystemFACADE {
         Project project2 = new Project("Scanning Space Rocks");
         Column column1 = new Column("To do");
         Column column2 = new Column("In Progress");
-        Column column3 = new Column("Testing");
-        Column column4 = new Column("Complete");
+        Column column3 = new Column("Done");
         Task task1 = new Task("working on engines", 3,"NEWFEATURE", "details for task", user1);
         Task task2 = new Task("fueling rocket", 2, "NEWFEATURE", "details for task", user1);
         Task task3 = new Task("Secondary testing all rocks", 2, "NEWFEATURE", "details for task", user1);
         Task task4 = new Task("Primary testing all rocks", 3, "NEWFEATURE", "details for task", user1);
+        Task task5 = new Task("Secondary testing all rocks", 2, "NEWFEATURE", "details for task", user1);
+        Task task6 = new Task("Primary testing all rocks", 3, "NEWFEATURE", "details for task", user1);
 
         user1.addCurrentProject(project1);
         user1.addCurrentProject(project2);
         project1.addColumn(column1);
         project1.addColumn(column2);
-        project2.addColumn(column3);
-        project2.addColumn(column4);
+        project1.addColumn(column3);
         column1.addTask(task1);
-        column2.addTask(task2);
-        column3.addTask(task3);
-        column4.addTask(task4);
+        column1.addTask(task2);
+        column2.addTask(task3);
+        column2.addTask(task4);
+        column3.addTask(task5);
+        column3.addTask(task6);
 
     }
 }
