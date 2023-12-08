@@ -31,7 +31,6 @@ public class LoginController implements Initializable{
         }
 
         App.setRoot("home");
-        //SceneManager.getInstance().showHome();
     }
 
     @Override
