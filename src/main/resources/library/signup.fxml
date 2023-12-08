@@ -19,6 +19,7 @@
       <TextField fx:id="lastNameTextBox" layoutX="110.0" layoutY="161.0" prefHeight="26.0" prefWidth="147.0" />
       <TextField fx:id="firstNameTextBox" layoutX="110.0" layoutY="108.0" prefHeight="26.0" prefWidth="147.0" />
       <TextField fx:id="emailTextBox" layoutX="110.0" layoutY="216.0" prefHeight="26.0" prefWidth="147.0" />
+      <Button layoutX="17.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#btnHomeClicked" text="Back" />
    </children>
    <stylesheets>
       <URL value="@styles.css" />

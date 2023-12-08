@@ -40,6 +40,11 @@ public class SignupController  implements Initializable{
         App.setRoot("home");
     }
 
+    @FXML
+    private void btnHomeClicked(MouseEvent event) throws IOException{
+        App.setRoot("welcome");
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }

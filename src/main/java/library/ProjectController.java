@@ -25,7 +25,7 @@ public class ProjectController implements Initializable{
 
     @FXML
     private TextArea projectTitle;
-    
+
     @FXML
     private TextField task1title;
         

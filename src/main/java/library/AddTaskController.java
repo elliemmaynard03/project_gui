@@ -12,7 +12,7 @@ public class AddTaskController implements Initializable {
 
     @FXML
     private void btnHomeClicked(MouseEvent event) throws IOException{
-        App.setRoot("home");
+        App.setRoot("project");
     }
 
     @Override

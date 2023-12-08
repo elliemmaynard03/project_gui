@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ProjectController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ProjectController">
    <children>
       <Label id="projectHeading" layoutX="78.0" layoutY="10.0" prefHeight="60.0" prefWidth="205.0" text="Project">
          <font>
@@ -22,17 +22,17 @@
       <TextArea fx:id="column1" layoutX="32.0" layoutY="277.0" prefHeight="100.0" prefWidth="280.0" />
       <TextArea fx:id="collaborators" layoutX="29.0" layoutY="215.0" prefHeight="26.0" prefWidth="234.0" />
       <Label layoutX="29.0" layoutY="198.0" text="Assigned To:" />
-      <TextField fx:id="task1title" layoutX="41.0" layoutY="292.0" />
-      <TextField fx:id="task2title" layoutX="41.0" layoutY="336.0" />
-      <TextField fx:id="task3title" layoutX="41.0" layoutY="412.0" />
-      <TextField fx:id="task4title" layoutX="41.0" layoutY="456.0" />
+      <TextField fx:id="task1title" layoutX="41.0" layoutY="314.0" />
+      <TextField fx:id="task2title" layoutX="41.0" layoutY="345.0" />
+      <TextField fx:id="task3title" layoutX="41.0" layoutY="434.0" />
+      <TextField fx:id="task4title" layoutX="41.0" layoutY="463.0" />
       <TextArea fx:id="projectTitle" layoutX="21.0" layoutY="74.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="187.0" />
-      <Button fx:id="AddTask1" layoutX="228.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#btnTask1Clicked" text="Add Task" />
-      <Button fx:id="AddTask2" layoutX="228.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#btnTask2Clicked" text="Add Task" />
-      <TextArea fx:id="column3" editable="false" layoutX="31.0" layoutY="422.0" prefHeight="100.0" prefWidth="280.0" />
-      <TextField fx:id="task5title" layoutX="40.0" layoutY="455.0" />
-      <TextField fx:id="task6title" layoutX="40.0" layoutY="490.0" />
-      <Button fx:id="AddTask3" layoutX="228.0" layoutY="468.0" mnemonicParsing="false" onMouseClicked="#btnTask1Clicked" text="Add Task" />
+      <Button fx:id="AddTask1" layoutX="228.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#btnTask1Clicked" text="Add Task" />
+      <Button fx:id="AddTask2" layoutX="228.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#btnTask2Clicked" text="Add Task" />
+      <TextArea fx:id="column3" editable="false" layoutX="31.0" layoutY="516.0" prefHeight="100.0" prefWidth="280.0" />
+      <TextField fx:id="task5title" layoutX="41.0" layoutY="583.0" />
+      <TextField fx:id="task6title" layoutX="41.0" layoutY="553.0" />
+      <Button fx:id="AddTask3" layoutX="228.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#btnTask1Clicked" text="Add Task" />
    </children>
    <stylesheets>
       <URL value="@styles.css" />
