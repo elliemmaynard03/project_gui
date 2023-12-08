@@ -15,7 +15,7 @@
                 <Font size="30.0" />
             </font>
         </Label>
-        <Button id="homeButton" layoutX="20.0" layoutY="30.0" mnemonicParsing="false" text="Home" />
+        <Button id="homeButton" layoutX="20.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#btnHomeClicked" text="Home" />
         <Label id="taskTitleLabel" layoutX="20.0" layoutY="88.0" text="Task Title:">
             <font>
                 <Font size="16.0" />
