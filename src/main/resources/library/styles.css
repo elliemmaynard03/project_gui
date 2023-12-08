@@ -15,8 +15,9 @@
 
 #userNameTextBox,
 #passwordTextBox {
-    -fx-background-radius: 8px;
-    -fx-background-color: #664edd12;
+    -fx-background-radius: 4px;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 8px;
 }
 
 #usernameLabel, #passwordLabel {
@@ -24,42 +25,67 @@
 }
 
 #loginButton {
-    -fx-background-color: #664edd; /* Fixed typo: fx-background-color should be -fx-background-color */
-    -fx-text-fill: white; /* Set text color to white for better visibility */
-    -fx-background-radius: 8px;
-    -fx-padding: 5px 10px;
+    -fx-background-color: #664edd;
+    -fx-text-fill: white;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px 16px;
+    -fx-font-size: 14px;
 }
 
 #loginButton:hover {
-    -fx-background-color: #6450c8; /* Change the color on hover */
+    -fx-background-color: #664edd;
 }
+
 
 
 
 /* Welcome */
 
-#welcomeLoginButton,#welcomeSignupButton {
+#welcomeLoginButton, #welcomeSignupButton {
     -fx-background-color: #664edd;
-    -fx-text-fill: white; /* Set text color to white for better visibility */
-    -fx-padding: 10px; /* Add padding to the label */
-    -fx-min-width: 0; /* Set minimum width to zero */
-    -fx-background-radius: 8px; /* Set border radius */
-    -fx-font-size: 24px; /* Adjust font size */
-    -fx-alignment: center; /* Center the text horizontally and vertically */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-min-width: 0;
+    -fx-background-radius: 8px;
+    -fx-font-size: 18px;
+    -fx-alignment: center;
+}
+
+#welcomeLoginButton:hover, #welcomeSignupButton:hover {
+    -fx-background-color: #6450c8;
+}
+
+#welcomeLabel {
+    -fx-text-fill: #664edd;
+    -fx-font-size: 45px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
 }
 
 /* Home */
 
-#projectArea {
-    -fx-background-radius: 8px; /* Set border radius */
-    -fx-background-color: #6450c8;
+#homeLabel {
+    -fx-text-fill: #664edd;
+}
+
+#projectArea1,
+#projectArea2 {
+    -fx-background-radius: 8px;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10px;
 }
 
 #addProjectButton {
     -fx-background-color: #664edd;
     -fx-text-fill: white;
-    -fx-background-radius: 100px;
+    -fx-background-radius: 100%; /* Make it a circle */
+    -fx-padding: 10px;
 }
+
+#addProjectButton:hover {
+    -fx-background-color: #6450c8;
+}
+
 
 /* Project */
 #projectTitleTextBox,  #projectDescriptionTextBox, #tastTextBox, #assigneesTextBox,
@@ -86,20 +112,36 @@ StackPane {
 /* Task */
 
 #addTaskLabel {
-    -fx-text-fill: white; /* Set text color to white for better visibility */
-    -fx-alignment: center; /* Center the text within the Label */
-    -fx-background-color: #664edd;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-background-color: #664edd; /* Updated color */
     -fx-background-radius: 0 0 8px 8px;
 }
 
-#taskDescriptionTextBox {
-    -fx-background-radius: 8px;
-    -fx-background-color: #664edd12;
+#taskDescriptionTextBox,
+#taskTitleTextBox {
+    -fx-background-radius: 4px;
+    -fx-background-color: #664edd12; /* Updated color with transparency */
+    -fx-padding: 8px;
 }
 
 #taskDescriptionLabel {
-    
+    -fx-font-weight: bold;
 }
+
+#addTaskButton {
+    -fx-background-color: #664edd; /* Updated color */
+    -fx-text-fill: white;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px 16px;
+    -fx-font-size: 16px;
+}
+
+#addTaskButton:hover {
+    -fx-background-color: #6450c8; /* Change the color on hover */
+}
+
+
 
 /* Write Comment */
 #newCommentLabel {
@@ -156,7 +198,7 @@ StackPane {
 }
 
 /* Profile */
-#profileHeading {
+#profileLabel {
     -fx-text-fill: white; /* Set text color to white for better visibility */
     -fx-font-size: 35.0; /* Adjust font size */
     -fx-alignment: center; /* Center the text within the Label */

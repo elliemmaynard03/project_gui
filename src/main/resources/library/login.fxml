@@ -7,14 +7,14 @@
 <?import java.net.*?>
 
 <Pane id="Pane" fx:id="login_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.LoginController">
-   <children>
-      <Button layoutX="56.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#btnLoginClicked" prefHeight="39.0" prefWidth="187.0" text="Log In" />
-      <TextField fx:id="userNameTextBox" layoutX="108.0" layoutY="151.0" />
-      <TextField fx:id="passwordTextBox" layoutX="108.0" layoutY="215.0" />
-      <Label fx:id="usernameLabel" layoutX="31.0" layoutY="156.0" text="User Name:" />
-      <Label fx:id="passwordLabel" layoutX="34.0" layoutY="219.0" text="Password: " />
-   </children>
-   <stylesheets>
-      <URL value="@styles.css" />
-   </stylesheets>
+    <children>
+        <Button fx:id="loginButton" layoutX="56.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#btnLoginClicked" prefHeight="39.0" prefWidth="187.0" text="Log In" />
+        <TextField fx:id="userNameTextBox" layoutX="54.0" layoutY="151.0" prefWidth="190.0" promptText="User Name" />
+        <PasswordField fx:id="passwordTextBox" layoutX="54.0" layoutY="215.0" prefWidth="190.0" promptText="Password" />
+        <Label fx:id="usernameLabel" layoutX="54.0" layoutY="127.0" text="User Name:" />
+        <Label fx:id="passwordLabel" layoutX="54.0" layoutY="191.0" text="Password: " />
+    </children>
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
 </Pane>
