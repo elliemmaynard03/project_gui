@@ -26,10 +26,10 @@ public class LoginController implements Initializable{
         String username = userNameTextBox.getText();
         String password = passwordTextBox.getText();
 
-        ProjectSystemFACADE FACADE = new ProjectSystemFACADE();
+        ProjectSystemFACADE FACADE = ProjectSystemFACADE.getInstance();
 
         FACADE.signUp(username, password, "email", "fn", "ln");
-
+ 
         if (FACADE.login(username, password) == null) {
             lbl_error.setText("Invalid login credentials.");
             return;

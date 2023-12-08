@@ -12,13 +12,14 @@ public class UserList {
     protected static UserList userList;
 
     // List of users
-    protected static ArrayList<User> users;
+    protected ArrayList<User> users;
 
     /**
      * Private constructor to initialize the UserList with data from DataLoader.
      */
-    protected UserList() {
-        users = DataLoader.getUsers();
+    private UserList() {
+        //users = DataLoader.getUsers();
+        users = new ArrayList<>();
     }
 
     /**
@@ -77,7 +78,7 @@ public class UserList {
         DataWriter.saveUsers();
     }
 
-    public static void addUser(User user) {
+    public void addUser(User user) {
         users.add(user);
     }
 }

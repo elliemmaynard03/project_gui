@@ -8,6 +8,18 @@ import java.util.Date;
 public class ProjectSystemFACADE {
     protected User user;
     protected Project project;
+    private static ProjectSystemFACADE facade;
+
+    public static ProjectSystemFACADE getInstance(){
+        if(facade == null){
+            facade = new ProjectSystemFACADE();
+        }
+        return facade;
+    }
+
+    private ProjectSystemFACADE(){
+        
+    }
 
     /**
      * Gets the currently logged-in user.
@@ -35,7 +47,7 @@ public class ProjectSystemFACADE {
             return null;
         }
         this.user = new User(firstName, lastName, email, userName, password);
-        UserList.addUser(user);
+        UserList.getInstance().addUser(user);
         return setUser(user);
     }
 

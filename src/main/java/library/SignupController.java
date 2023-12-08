@@ -29,8 +29,7 @@ public class SignupController  implements Initializable{
         String lastname = lastNameTextBox.getText();
         String email = emailTextBox.getText();
 
-        ProjectSystemFACADE FACADE = new ProjectSystemFACADE();
-
+        ProjectSystemFACADE FACADE = ProjectSystemFACADE.getInstance();
         User user = FACADE.signUp(username, password, email, firstname, lastname);
         if (user == null) {
             // error label
@@ -38,7 +37,8 @@ public class SignupController  implements Initializable{
         }
 
         FACADE.setUser(user);
-        SceneManager.getInstance().showHome();
+        App.setRoot("home");
+        //SceneManager.getInstance().showHome();
     }
 
     @Override
